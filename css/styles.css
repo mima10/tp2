@@ -1,0 +1,11 @@
+header{
+}
+.hautPages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    background-color: black;
+
+}
+.lien{
+    color: white;
+}
