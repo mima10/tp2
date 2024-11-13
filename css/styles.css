@@ -1,11 +1,120 @@
-header{
+body{
+    margin: 3px;
 }
+
+/*---------------------------------------------------Gestion du format page--------------------------------------*/
+#conteneur{
+    display: grid;
+    grid-template-columns: 2f 1f;
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer"
+    ;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+    background-color:#00bffe;
+}
+footer{
+    grid-area: footer;
+}
+/*---------------------------------------------------Fin gestion format page--------------------------------------*/
+
+/*---------------------------------------------------Gestion des images--------------------------------------*/
+img{
+    max-width: 350px;
+    margin: auto;
+    
+   }
+figure {
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    width: fit-content;
+    float: left;
+    max-width: 350px;
+   }   
+/*-------------------------------------------------Fin gestion des images---------------------------------*/
+
+/*-------------------------------------------------Gestion de aside---------------------------------*/
+
+#aside{
+    display: grid;
+    padding: 10px;
+    text-align: right;
+    
+}
+/*-------------------------------------------------Fin gestion de aside---------------------------------*/
+
+/*-------------------------------------------------Gestion du haut de page---------------------------------*/
+a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}  
 .hautPages{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    height: 3em;
     background-color: black;
+    text-align: center;
 
 }
 .lien{
     color: white;
+}
+/*-------------------------------------------------Fin gestion haut de page---------------------------------*/
+
+/*-------------------------------------------------Gestion haut de page---------------------------------*/
+.basPages{
+    text-align: right;
+    background-color: gray;
+    height: 2em;
+}
+/*-------------------------------------------------Fin gestion bas de pages---------------------------------*/
+
+/*-----------------------------------------------------Gestion de la partie main------------------------------------*/
+#mainConteneur{
+    display: grid;
+    grid-template-columns: 1f 1f;
+    grid-template-rows: repeat(4 1fr);
+    padding: 10px;
+    grid-template-areas: 
+        "titre titre"
+        "texte1 texte1"
+        "texte2 texte2"
+        "images texte3";
+}
+#titre{
+    grid-area: titre;
+    
+}
+#texte1{
+    grid-area: texte1;
+    padding-top: 10px;
+}
+#texte2{
+    grid-area: texte2;
+    padding-top: 10px;
+}
+#texte3{
+    grid-area: texte3;
+    padding-top: 10px;
+}
+#images{
+    grid-area: images;
+    padding-top: 10px;
+}
+/*-----------------------------------------------------Fin de la partie main------------------------------------*/
+
+.titres{
+
 }
